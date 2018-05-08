@@ -15,7 +15,5 @@ mkdir -p qdata/logs
 echo "[*] Configuring node 7 (permissioned)"
 mkdir -p qdata/dd7/{keystore,geth}
 cp permissioned-nodes.json qdata/dd7/static-nodes.json
-cp permissioned-nodes.json qdata/dd7/
-cp keys/key7 qdata/dd7/keystore
 cp raft/nodekey7 qdata/dd7/geth/nodekey
 geth --datadir qdata/dd7 init genesis.json
